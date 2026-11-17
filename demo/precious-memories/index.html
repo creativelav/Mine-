@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Precious Memories by Andreea · Artizanat premium</title>
+<meta name="description" content="Brăduți parfumați, tăvițe din ceramică, mărturii elegante și cadouri exclusive. Fiecare piesă e turnată, finisată și ambalată în atelierul Precious Memories.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{ --bg:#FBF8F3;--bg2:#F3ECE2;--ink:#2B211B;--soft:#6B5B4F;--acc:#A67C3D;--acc-ink:#FFFFFF;--line:#E4D8C8;--dark:#2B211B; --fh:'Cormorant Garamond', Georgia, serif; --fb:'Jost', system-ui, sans-serif; --r:18px; --max:1180px }
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--fb);font-size:16px;line-height:1.6;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+:focus-visible{outline:2px solid var(--acc);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--dark);color:#fff;padding:10px 14px;border-radius:8px;z-index:99}
+.skip:focus{left:8px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 22px}
+.eyebrow{font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:var(--acc);font-weight:600}
+.h2{font-family:var(--fh);font-weight:600;font-size:clamp(2rem,4.4vw,3rem);line-height:1.08;letter-spacing:-.01em;margin:.3em 0 .4em}
+.lead{color:var(--soft);max-width:60ch}
+
+/* demo ribbon */
+.demo{background:var(--dark);color:#f4ede4;font-size:.78rem;text-align:center;padding:8px 16px;letter-spacing:.02em}
+.demo b{color:#fff;font-weight:600}
+
+/* header */
+header.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:saturate(1.4) blur(12px);-webkit-backdrop-filter:saturate(1.4) blur(12px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;height:66px}
+.logo{text-decoration:none;display:flex;flex-direction:column;line-height:1}
+.logo b{font-family:var(--fh);font-size:1.5rem;font-weight:600;letter-spacing:.01em}
+.logo small{font-size:.66rem;letter-spacing:.24em;text-transform:uppercase;color:var(--soft);margin-top:4px}
+nav.links{display:flex;gap:26px;font-size:.9rem}
+nav.links a{text-decoration:none;color:var(--soft)}
+nav.links a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--acc);color:var(--acc-ink);text-decoration:none;font-weight:600;font-size:.92rem;padding:13px 22px;border-radius:999px;transition:transform .2s,box-shadow .2s;box-shadow:0 8px 24px -10px var(--acc);min-height:46px}
+.btn:hover{transform:translateY(-1px)}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line);box-shadow:none}
+.bar .btn{padding:10px 18px;min-height:42px;font-size:.85rem}
+
+/* hero */
+.hero{padding:clamp(28px,5vw,70px) 0 clamp(40px,6vw,90px)}
+.hero .grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,5vw,72px);align-items:center}
+.hero h1{font-family:var(--fh);font-weight:600;font-size:clamp(2.3rem,5.4vw,4.3rem);line-height:1.02;letter-spacing:-.015em;margin:.35em 0 .45em}
+.hero .lead{font-size:1.06rem}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.pills{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin-top:30px}
+.pills li{font-size:.8rem;border:1px solid var(--line);background:var(--bg2);padding:7px 13px;border-radius:999px;color:var(--soft)}
+.stack{position:relative;aspect-ratio:4/5;max-height:640px}
+.stack figure{position:absolute;overflow:hidden;border-radius:var(--r);box-shadow:0 30px 60px -30px rgba(0,0,0,.45)}
+.stack .a{inset:0 18% 12% 0}
+.stack .b{width:44%;aspect-ratio:3/4;right:0;bottom:0;border:6px solid var(--bg)}
+.stack img{width:100%;height:100%;object-fit:cover}
+
+/* collection */
+section.coll{padding:clamp(50px,7vw,100px) 0;background:var(--bg2)}
+.coll-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:26px}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{border:1px solid var(--line);background:var(--bg);padding:9px 16px;border-radius:999px;font-size:.85rem;color:var(--soft);min-height:40px}
+.chip.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.cards{display:flex;flex-wrap:wrap;justify-content:center;gap:22px}
+.cards .card{width:calc((100% - 44px)/3)}
+.card{background:var(--bg);border-radius:var(--r);overflow:hidden;border:1px solid var(--line);display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s}
+.card:hover{transform:translateY(-3px);box-shadow:0 24px 50px -32px rgba(0,0,0,.4)}
+.card[hidden]{display:none}
+.ph{display:block;width:100%;aspect-ratio:4/5;overflow:hidden;background:var(--bg2)}
+.ph img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.card:hover .ph img{transform:scale(1.04)}
+.cb{padding:18px 20px 22px;display:flex;flex-direction:column;gap:6px;flex:1}
+.tags{display:flex;gap:6px;flex-wrap:wrap}
+.tags span{font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--acc);font-weight:600}
+.card h3{font-family:var(--fh);font-size:1.45rem;font-weight:600;line-height:1.15}
+.card p{color:var(--soft);font-size:.92rem}
+.ask{margin-top:auto;padding-top:10px;font-size:.88rem;font-weight:600;color:var(--acc);text-decoration:none}
+.ask:hover{text-decoration:underline}
+.price-note{margin-top:20px;font-size:.84rem;color:var(--soft)}
+
+/* extras */
+.extras{padding:clamp(50px,7vw,90px) 22px 0}
+.extras ul{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:10px}
+.extras li{border-top:2px solid var(--acc);padding-top:14px}
+.extras h3{font-family:var(--fh);font-size:1.3rem;font-weight:600;line-height:1.2;margin-bottom:4px}
+.extras p{font-size:.9rem;color:var(--soft)}
+
+/* steps */
+section.how{padding:clamp(50px,7vw,100px) 0}
+.how ol{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:20px}
+.how li{background:var(--bg2);border-radius:var(--r);padding:26px}
+.how .n{font-family:var(--fh);font-size:2.4rem;color:var(--acc);line-height:1}
+.how h3{font-size:1.05rem;margin:10px 0 4px}
+.how p{color:var(--soft);font-size:.93rem}
+
+/* reviews */
+section.reviews{background:var(--dark);color:#f6efe6;padding:clamp(50px,7vw,100px) 0}
+.reviews .eyebrow{color:#d9b97a}
+.reviews ul{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:20px}
+.reviews li{border:1px solid rgba(255,255,255,.14);border-radius:var(--r);padding:26px;display:flex;flex-direction:column;justify-content:space-between;gap:18px}
+.reviews blockquote{font-family:var(--fh);font-size:1.35rem;line-height:1.35}
+.who{font-size:.85rem;color:#cdbfae}
+
+/* about */
+section.about{padding:clamp(50px,7vw,100px) 0}
+.about .grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(28px,5vw,70px);align-items:center}
+.about figure{border-radius:var(--r);overflow:hidden;aspect-ratio:1/1}
+.about figure img{width:100%;height:100%;object-fit:cover}
+.about p{color:var(--soft);font-size:1.04rem;max-width:56ch}
+
+/* contact */
+section.contact{padding:0 0 clamp(60px,8vw,110px)}
+.cbox{background:var(--dark);color:#f6efe6;border-radius:calc(var(--r) + 6px);padding:clamp(30px,5vw,60px);display:flex;justify-content:space-between;align-items:center;gap:26px;flex-wrap:wrap}
+.cbox .h2{color:#fff;margin:.1em 0 .25em}
+.cbox p{color:#d8ccbd}
+.cbox .btn{background:#fff;color:var(--dark);box-shadow:none}
+
+footer{border-top:1px solid var(--line);padding:34px 0 100px;font-size:.84rem;color:var(--soft)}
+footer .row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer nav{display:flex;gap:18px;flex-wrap:wrap}
+footer button{text-decoration:underline;text-underline-offset:3px;color:var(--soft);min-height:32px}
+footer .biz{margin-top:14px;font-size:.78rem}
+
+/* floating contact (mobile) */
+.fab{position:fixed;left:16px;right:16px;bottom:14px;z-index:30;display:none}
+.fab .btn{width:100%;padding:15px}
+
+/* dialogs */
+dialog{border:0;padding:0;background:transparent;max-width:min(92vw,980px);margin:auto}
+dialog::backdrop{background:rgba(10,8,6,.82)}
+.lb{position:relative;color:#fff}
+.lb img{max-height:82vh;width:auto;max-width:100%;margin:0 auto;border-radius:12px}
+.lb p{text-align:center;margin-top:12px;font-family:var(--fh);font-size:1.3rem}
+.lb .x,.lb .nv{position:absolute;background:rgba(255,255,255,.92);color:#111;width:44px;height:44px;border-radius:50%;font-size:1.2rem;display:grid;place-items:center}
+.lb .x{top:10px;right:10px}
+.lb .pv{left:10px;top:42%}.lb .nx{right:10px;top:42%}
+.legal{background:var(--bg);color:var(--ink);border-radius:var(--r);padding:30px clamp(20px,4vw,40px);max-height:84vh;overflow:auto;width:min(92vw,680px)}
+.legal h2{font-family:var(--fh);font-size:1.9rem;font-weight:600;margin-bottom:10px}
+.legal h3{font-size:1rem;margin:16px 0 4px}
+.legal p,.legal li{font-size:.92rem;color:var(--soft)}
+.legal ul{padding-left:18px}
+.legal .close{margin-top:20px}
+.tbd{background:var(--bg2);border:1px dashed var(--acc);border-radius:6px;padding:0 6px;color:var(--ink)}
+
+@media (max-width:900px){
+  nav.links{display:none}
+  .hero .grid,.about .grid{grid-template-columns:1fr}
+  .stack{max-width:520px;width:100%;margin:0 auto}
+  .cards{gap:14px}
+  .cards .card{width:calc((100% - 14px)/2)}
+  .extras ul{grid-template-columns:repeat(2,1fr)}
+  .how ol,.reviews ul{grid-template-columns:1fr}
+  .about figure{aspect-ratio:4/3}
+}
+@media (max-width:560px){
+  .wrap{padding:0 16px}
+  .bar .btn{display:none}
+  .cards{gap:10px}
+  .cards .card{width:calc((100% - 10px)/2)}
+  .cb{padding:12px 12px 14px}
+  .card h3{font-size:1.12rem}
+  .card p{font-size:.82rem}
+  .ask{font-size:.8rem}
+  .extras{padding-left:16px;padding-right:16px}
+  .extras ul{grid-template-columns:1fr}
+  .fab{display:block}
+  .cta .btn{flex:1 1 100%}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Sari la conținut</a>
+<div class="demo" role="note">Demo personalizat pentru <b>Precious Memories</b> · Propunere de site creată pe baza lucrărilor publicate pe TikTok (@preciousmemories1)</div>
+
+<header class="top">
+  <div class="wrap bar">
+    <a class="logo" href="#main" aria-label="Precious Memories, începutul paginii"><b>Precious Memories</b><small>by Andreea</small></a>
+    <nav class="links" aria-label="Meniu principal"><a href="#colectie">Colecția</a><a href="#cum">Cum comanzi</a><a href="#despre">Despre</a><a href="#contact">Contact</a></nav>
+    <a class="btn" href="https://www.tiktok.com/@preciousmemories1" target="_blank" rel="noopener">Scrie-ne pe TikTok</a>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero">
+  <div class="wrap grid">
+    <div>
+      <p class="eyebrow">Atelier de artizanat premium</p>
+      <h1>Lumânări naturale și ceramică, create cu mâna.</h1>
+      <p class="lead">Brăduți parfumați, tăvițe din ceramică, mărturii elegante și cadouri exclusive. Fiecare piesă e turnată, finisată și ambalată în atelierul Precious Memories.</p>
+      <div class="cta">
+        <a class="btn" href="#colectie">Vezi colecția</a>
+        <a class="btn ghost" href="https://www.tiktok.com/@preciousmemories1" target="_blank" rel="noopener">Scrie-ne pe TikTok</a>
+      </div>
+      <ul class="pills" aria-label="Pe scurt"><li>Lumânări 100% naturale</li><li>Ceramică decorativă</li><li>Mărturii elegante</li><li>Cadouri exclusive</li></ul>
+    </div>
+    <div class="stack">
+      <figure class="a"><img src="img/pm-trees.jpg" alt="Doi brăduți-lumânare în cutii transparente, legați cu fundă aurie" fetchpriority="high"></figure>
+      <figure class="b"><img src="img/pm-shell.jpg" alt="Tăvițe decorative albe în formă de scoică și stea de mare"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="coll" id="colectie" aria-labelledby="col-h">
+  <div class="wrap">
+    <div class="coll-head">
+      <div><p class="eyebrow">Lucrate manual</p><h2 id="col-h" class="h2">Colecția</h2><p class="lead">O selecție din piesele preferate. Fiecare model se poate adapta la culoarea, parfumul sau mesajul dorit.</p></div>
+      <div class="chips" role="group" aria-label="Filtrează după categorie"><button type="button" class="chip on" data-f="Toate" aria-pressed="true">Toate</button><button type="button" class="chip" data-f="Crăciun" aria-pressed="false">Crăciun</button><button type="button" class="chip" data-f="Lumânări" aria-pressed="false">Lumânări</button><button type="button" class="chip" data-f="Ceramică" aria-pressed="false">Ceramică</button></div>
+    </div>
+    <div class="cards" id="cards"><article class="card" data-tags="Crăciun|Lumânări">
+  <button type="button" class="ph" data-i="0" aria-label="Vezi mărit: Brăduți decorativi în cutie cadou"><img src="img/pm-trees.jpg" alt="Doi brăduți-lumânare, unul ivory și unul verde pal, în cutii transparente cu fundă aurie" loading="lazy" decoding="async"></button>
+  <div class="cb"><div class="tags"><span>Crăciun</span><span>Lumânări</span></div>
+  <h3>Brăduți decorativi în cutie cadou</h3><p>Nuanțe delicate, accente aurii și ambalaj elegant, gata de oferit.</p>
+  <a class="ask" href="https://www.tiktok.com/@preciousmemories1" target="_blank" rel="noopener">Întreabă de acest model <span aria-hidden="true">→</span></a></div>
+</article><article class="card" data-tags="Crăciun|Lumânări|Ceramică">
+  <button type="button" class="ph" data-i="1" aria-label="Vezi mărit: Lumânare în recipient decorativ"><img src="img/pm-cup.jpg" alt="Lumânare aprinsă într-un recipient alb cu margine ondulată și brăduți aurii" loading="lazy" decoding="async"></button>
+  <div class="cb"><div class="tags"><span>Crăciun</span><span>Lumânări</span><span>Ceramică</span></div>
+  <h3>Lumânare în recipient decorativ</h3><p>Recipient alb cu brăduți aurii în relief, care rămâne și după ce lumânarea s-a consumat.</p>
+  <a class="ask" href="https://www.tiktok.com/@preciousmemories1" target="_blank" rel="noopener">Întreabă de acest model <span aria-hidden="true">→</span></a></div>
+</article><article class="card" data-tags="Crăciun|Lumânări">
+  <button type="button" class="ph" data-i="2" aria-label="Vezi mărit: Lumânări de Crăciun, set atelier"><img src="img/pm-gingerbread.jpg" alt="Lumânări în formă de om de turtă dulce, brad și fulg de nea pe un platou de lemn" loading="lazy" decoding="async"></button>
+  <div class="cb"><div class="tags"><span>Crăciun</span><span>Lumânări</span></div>
+  <h3>Lumânări de Crăciun, set atelier</h3><p>Turtă dulce, brăduț și fulg de nea, cu etichetă «Merry Christmas».</p>
+  <a class="ask" href="https://www.tiktok.com/@preciousmemories1" target="_blank" rel="noopener">Întreabă de acest model <span aria-hidden="true">→</span></a></div>
+</article><article class="card" data-tags="Crăciun">
+  <button type="button" class="ph" data-i="3" aria-label="Vezi mărit: Fulg de nea decorativ"><img src="img/pm-snowflake.jpg" alt="Fulg de nea decorativ ivory cu ornamente aurii, sprijinit pe un material gri" loading="lazy" decoding="async"></button>
+  <div class="cb"><div class="tags"><span>Crăciun</span></div>
+  <h3>Fulg de nea decorativ</h3><p>Model ivory cu ornamente aurii, pentru brad sau pentru masa de sărbători.</p>
+  <a class="ask" href="https://www.tiktok.com/@preciousmemories1" target="_blank" rel="noopener">Întreabă de acest model <span aria-hidden="true">→</span></a></div>
+</article><article class="card" data-tags="Ceramică">
+  <button type="button" class="ph" data-i="4" aria-label="Vezi mărit: Tăvițe Scoică &amp; Stea de mare"><img src="img/pm-shell.jpg" alt="Tăviță albă în formă de scoică ținută în palmă, lângă o tăviță stea de mare" loading="lazy" decoding="async"></button>
+  <div class="cb"><div class="tags"><span>Ceramică</span></div>
+  <h3>Tăvițe Scoică &amp; Stea de mare</h3><p>Ceramică decorativă albă, pentru bijuterii, săpun sau ca accent pe noptieră.</p>
+  <a class="ask" href="https://www.tiktok.com/@preciousmemories1" target="_blank" rel="noopener">Întreabă de acest model <span aria-hidden="true">→</span></a></div>
+</article></div>
+    <p class="price-note">Prețul depinde de mărime, culori și personalizare. Îl primești în mesaj, fără costuri ascunse, înainte să confirmi comanda.</p>
+  </div>
+</section>
+
+
+
+<section class="how" id="cum" aria-labelledby="how-h">
+  <div class="wrap">
+    <p class="eyebrow">Simplu, în trei pași</p>
+    <h2 id="how-h" class="h2">Cum comanzi</h2>
+    <ol><li><span class="n">01</span><h3>Alegi modelul</h3><p>Răsfoiești colecția și îți salvezi piesele preferate.</p></li><li><span class="n">02</span><h3>Scrii-ne un mesaj</h3><p>Spune-ne ocazia, culoarea, parfumul și data la care ai nevoie de comandă.</p></li><li><span class="n">03</span><h3>Primești cadoul</h3><p>Îl pregătim manual și îl ambalăm elegant, gata de oferit.</p></li></ol>
+  </div>
+</section>
+
+<section class="reviews" aria-labelledby="rv-h"><div class="wrap"><p class="eyebrow">Ce spun clientele</p><h2 id="rv-h" class="h2">Recomandări reale</h2><ul><li><blockquote>„Produse unicat, deosebite și de calitate!”</blockquote><p class="who">Ioana V. · <span>recomandare pe Facebook</span></p></li><li><blockquote>„Produse făcute cu pasiune, cadouri minunate și mărturii inedite! Recomand!”</blockquote><p class="who">Gabriela N. · <span>recomandare pe Facebook</span></p></li><li><blockquote>„La mine a ajuns un superb coș galben cu miros intens de flori… recomand cu mult drag produsele realizate cu pasiune și iubire de frumos.”</blockquote><p class="who">Sorina T. · <span>recomandare pe Facebook</span></p></li></ul></div></section>
+
+<section class="about" id="despre" aria-labelledby="ab-h">
+  <div class="wrap grid">
+    <figure><img src="img/pm-gingerbread.jpg" alt="Lucrare din atelierul Precious Memories" loading="lazy"></figure>
+    <div><p class="eyebrow">Povestea noastră</p><h2 id="ab-h" class="h2">Despre atelier</h2><p>Precious Memories înseamnă artizanat premium făcut cu răbdare: lumânări naturale, ceramică decorativă, mărturii elegante și cadouri exclusive. Fiecare piesă pornește de la o idee simplă: un cadou bun se ține minte mult după ce a fost desfăcut.</p></div>
+  </div>
+</section>
+
+<section class="contact" id="contact" aria-labelledby="ct-h">
+  <div class="wrap">
+    <div class="cbox">
+      <div><h2 id="ct-h" class="h2">Hai să-ți facem cadoul.</h2><p>Comenzile se fac prin mesaj. Număr de WhatsApp: de completat.</p></div>
+      <a class="btn" href="https://www.tiktok.com/@preciousmemories1" target="_blank" rel="noopener">Scrie-ne pe TikTok <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="row">
+      <p>© 2026 Precious Memories · Toate fotografiile aparțin Precious Memories.</p>
+      <nav aria-label="Informații legale">
+        <button type="button" data-open="d-priv">Confidențialitate</button>
+        <button type="button" data-open="d-cookie">Cookie-uri</button>
+        <button type="button" data-open="d-terms">Termeni & retur</button>
+      </nav>
+    </div>
+    <p class="biz">Date firmă: <span class="tbd">denumire · CUI · adresă · e-mail, de completat</span> · <a href="https://anpc.ro" target="_blank" rel="noopener">ANPC</a></p>
+  </div>
+</footer>
+
+<div class="fab"><a class="btn" href="https://www.tiktok.com/@preciousmemories1" target="_blank" rel="noopener">Scrie-ne pe TikTok</a></div>
+
+<dialog id="lb" aria-label="Galerie foto">
+  <div class="lb">
+    <img id="lb-img" alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+    <p id="lb-cap"></p>
+    <button type="button" class="x" data-close aria-label="Închide">✕</button>
+    <button type="button" class="nv pv" id="lb-pv" aria-label="Fotografia anterioară">←</button>
+    <button type="button" class="nv nx" id="lb-nx" aria-label="Fotografia următoare">→</button>
+  </div>
+</dialog>
+
+<dialog id="d-priv" aria-labelledby="dp-h"><div class="legal">
+  <h2 id="dp-h">Politica de confidențialitate</h2>
+  <p>Acest site nu are formulare, conturi sau plăți și nu colectează date personale. Comenzile se discută direct în aplicația de mesagerie aleasă de tine (WhatsApp sau TikTok), care are propria politică de confidențialitate.</p>
+  <h3>Ce date folosim pentru o comandă</h3>
+  <p>Doar ce ne trimiți tu în mesaj: numele, telefonul, adresa de livrare și textul de personalizare. Le folosim numai pentru a realiza și livra comanda și le păstrăm cât cere legea contabilă.</p>
+  <h3>Drepturile tale (GDPR)</h3>
+  <p>Poți cere oricând acces, corectare sau ștergerea datelor tale, scriindu-ne la <span class="tbd">e-mail de completat</span>. Răspundem în cel mult 30 de zile. Te poți adresa și ANSPDCP (dataprotection.ro).</p>
+  <button type="button" class="btn close" data-close>Am înțeles</button>
+</div></dialog>
+
+<dialog id="d-cookie" aria-labelledby="dc-h"><div class="legal">
+  <h2 id="dc-h">Cookie-uri</h2>
+  <p>Site-ul nu folosește cookie-uri de urmărire, analiză sau publicitate, deci nu îți cerem acordul printr-un banner. Fonturile se încarcă de la Google Fonts. Dacă vor fi adăugate statistici, aici va apărea un banner de consimțământ.</p>
+  <button type="button" class="btn close" data-close>Închide</button>
+</div></dialog>
+
+<dialog id="d-terms" aria-labelledby="dt-h"><div class="legal">
+  <h2 id="dt-h">Termeni, livrare & retur</h2>
+  <h3>Comenzi și prețuri</h3>
+  <p>Prețul final, costul livrării și termenul de realizare îți sunt comunicate în scris înainte să confirmi comanda. Nu există costuri adăugate ulterior.</p>
+  <h3>Produse personalizate</h3>
+  <p>Produsele realizate după indicațiile tale (nume, mesaj, culori) nu pot fi returnate pentru simplul fapt că te-ai răzgândit, conform OUG 34/2014, art. 16 lit. c.</p>
+  <h3>Produse deteriorate</h3>
+  <p>Dacă produsul ajunge deteriorat, trimite-ne o fotografie în 48 de ore de la primire și găsim împreună o soluție: refacere sau rambursare.</p>
+  <p><span class="tbd">Termenii finali trebuie confirmați de proprietară.</span> Soluționarea online a litigiilor: ANPC, platforma SAL/SOL.</p>
+  <button type="button" class="btn close" data-close>Închide</button>
+</div></dialog>
+
+<script>
+(function(){
+  var LB = [["img/pm-trees.jpg", "Doi brăduți-lumânare, unul ivory și unul verde pal, în cutii transparente cu fundă aurie", "Brăduți decorativi în cutie cadou"], ["img/pm-cup.jpg", "Lumânare aprinsă într-un recipient alb cu margine ondulată și brăduți aurii", "Lumânare în recipient decorativ"], ["img/pm-gingerbread.jpg", "Lumânări în formă de om de turtă dulce, brad și fulg de nea pe un platou de lemn", "Lumânări de Crăciun, set atelier"], ["img/pm-snowflake.jpg", "Fulg de nea decorativ ivory cu ornamente aurii, sprijinit pe un material gri", "Fulg de nea decorativ"], ["img/pm-shell.jpg", "Tăviță albă în formă de scoică ținută în palmă, lângă o tăviță stea de mare", "Tăvițe Scoică & Stea de mare"]];
+  var chips = document.querySelectorAll('.chip'), cards = document.querySelectorAll('.card');
+  chips.forEach(function(c){ c.addEventListener('click', function(){
+    var f = c.dataset.f;
+    chips.forEach(function(x){ var on = x===c; x.classList.toggle('on',on); x.setAttribute('aria-pressed', on?'true':'false'); });
+    cards.forEach(function(card){ card.hidden = !(f==='Toate' || card.dataset.tags.split('|').indexOf(f)>-1); });
+  });});
+  function open(d){ if(d.showModal){ d.showModal(); } else { d.setAttribute('open',''); } }
+  function close(d){ if(d.close){ d.close(); } else { d.removeAttribute('open'); } }
+  var lb = document.getElementById('lb'), li = document.getElementById('lb-img'), lc = document.getElementById('lb-cap'), cur = 0;
+  function show(i){ cur = (i+LB.length)%LB.length; li.src = LB[cur][0]; li.alt = LB[cur][1]; lc.textContent = LB[cur][2]; }
+  document.querySelectorAll('.ph').forEach(function(b){ b.addEventListener('click', function(){ show(+b.dataset.i); open(lb); }); });
+  document.getElementById('lb-pv').addEventListener('click', function(){ show(cur-1); });
+  document.getElementById('lb-nx').addEventListener('click', function(){ show(cur+1); });
+  lb.addEventListener('keydown', function(e){ if(e.key==='ArrowLeft') show(cur-1); if(e.key==='ArrowRight') show(cur+1); });
+  document.querySelectorAll('[data-open]').forEach(function(b){ b.addEventListener('click', function(){ open(document.getElementById(b.dataset.open)); }); });
+  document.querySelectorAll('dialog').forEach(function(d){
+    d.addEventListener('click', function(e){ if(e.target===d || e.target.hasAttribute('data-close')) close(d); });
+  });
+})();
+</script>
+</body>
+</html>
